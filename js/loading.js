@@ -15,7 +15,7 @@ $('.box3').each(function() {
       }
 
       $(this).css('animation-delay', s + 's');
-      $(this).addClass('box' + cl);
+      $(this).removeClass('box3').addClass('box' + cl);
       s += 0.5;
 
     }
@@ -39,7 +39,7 @@ $(document).scroll(function() {
 
       if(!$(this).hasClass('box2') && !$(this).hasClass('box4'))
 
-         $(this).addClass('box' + cl);
+         $(this).removeClass('box3').addClass('box' + cl);
          
       }
 
