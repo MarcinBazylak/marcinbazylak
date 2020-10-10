@@ -44,7 +44,7 @@ $lng[17] = 'Certyfikaty potwierdzające moje kwalifikacje:';
 
 $lng[18] = 'REALIZACJE';
 
-$lng[19] = 'Pizzeria FRANCESCO<br>Projekt w trakcie realizacji';
+$lng[19] = 'Pizzeria FRANCESCO';
 
 $lng[20] = 'Strona internetowa Pizzerii Francesco. Projekt przewiduje możliwość zamawiania pizzy online z dowozem do klienta.';
 

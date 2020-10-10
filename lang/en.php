@@ -71,8 +71,8 @@ $lng[32] = 'CONTACT';
 
 $lng[33] = 'Marcin Bazylak<br>tel. +48 883 662 652';
 
-$lng[34] = 'If you would like to contact me to get some more information about my offers,
-             please feel free to write me a message.';
+$lng[34] = 'If you would like to contact me to get some more information about my offer,
+             please feel free to send me a message.';
 
 $lng[35] = 'Send me a message';
 
@@ -80,6 +80,6 @@ $lng[36] = 'Your name';
 
 $lng[37] = 'Your email';
 
-$lng[38] = 'TYour message';
+$lng[38] = 'Your message';
 
 ?>

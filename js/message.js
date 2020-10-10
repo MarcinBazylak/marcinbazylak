@@ -14,6 +14,6 @@ var messageField = document.getElementById("message");
 
          setTimeout(function(){
             messageField.className = "";
-         }, 3000);
+         }, 5000);
 
       }

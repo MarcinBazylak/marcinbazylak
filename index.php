@@ -1,5 +1,5 @@
 <?php
-include 'stats.php'
+// include 'stats.php'
 ?>
 <!DOCTYPE html>
 <html lang="pl-PL">
@@ -32,53 +32,53 @@ include 'stats.php'
    <script src="_lightbox/dist/js/lightbox.js"></script>
 
    <script>
-   $(function() {
+      $(function() {
 
-      $('#contactForm').on('submit', function(e) {
+         $('#contactForm').on('submit', function(e) {
 
-         var tick;
+            var tick;
 
-         e.preventDefault();
-         if ($('#tick').is(":checked")) {
-            tick = $('#tick').val()
-         }
-
-         $.ajax({
-            type: 'post',
-            url: 'send.php',
-            data: {
-               name: $('#name').val(),
-               email: $('#email').val(),
-               text: $('#txtInput').val(),
-               tick: tick
-            },
-            success: function(data) {
-               document.getElementById('contactForm').reset();
-               // window.scrollTo({ top: 0, behavior: 'smooth' });
-               showAlert(data);
+            e.preventDefault();
+            if ($('#tick').is(":checked")) {
+               tick = $('#tick').val()
             }
+
+            $.ajax({
+               type: 'post',
+               url: 'send.php',
+               data: {
+                  name: $('#name').val(),
+                  email: $('#email').val(),
+                  text: $('#txtInput').val(),
+                  tick: tick
+               },
+               success: function(data) {
+                  document.getElementById('contactForm').reset();
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                  showAlert(data);
+               }
+            });
+
          });
 
       });
-
-   });
    </script>
 
 </head>
 
-
 <body>
 
-<?php
+   <?php
 
-include (isset($_COOKIE['lang'])) ? 'body.php' : 'lang.php';
+   include (isset($_COOKIE['lang'])) ? 'body.php' : 'lang.php';
 
-?>
+   ?>
 
-<script src="js/loading.js"></script>
-<script src="js/message.js"></script>
-<script src="js/menu.js"></script>
-<script src="js/flag.js"></script>
-<script src="js/links.js"></script>
+   <script src="js/loading.js"></script>
+   <script src="js/message.js"></script>
+   <script src="js/menu.js"></script>
+   <script src="js/flag.js"></script>
+   <script src="js/links.js"></script>
 </body>
+
 </html>
